@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  test2
+//  Lecture_20200604
 //
-//  Created by Tony Bernal on 6/2/20.
+//  Created by Tony Bernal on 6/4/20.
 //  Copyright © 2020 Tony Bernal. All rights reserved.
 //
 
