@@ -45,9 +45,9 @@ std::string get_reverse_string(std::string str)
 {
     std::string reverse;
     reverse = "";
-    for (std::size_t i = str.size() - 1; i >= 0; --i)
+    for (std::size_t i = str.size(); i > 0; --i)
         {
-           reverse = reverse.push_back(str[i]);
+           reverse.push_back(str[i-1]);
         }
     return reverse;
 }
@@ -62,4 +62,29 @@ b. iterate local string variable and
 c. return string
 
 */
+std::string get_dna_complement(std::string dna)
+{
+  std::string str = get_reverse_string(dna);
 
+  for(std::size_t i = 0; i < dna.length(); i++)
+  {
+    if(str[i] == 'A')
+    {
+      str[i] = 'T';
+    }
+    else if(str[i] == 'T')
+    {
+      str[i] = 'A';
+    }
+    else if(str[i] == 'G')
+    {
+      str[i] = 'C';
+    }
+    else
+    {
+      str[i] = 'G';
+    }
+  }
+  return str;
+
+}
